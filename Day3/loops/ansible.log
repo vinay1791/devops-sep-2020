@@ -1,0 +1,128 @@
+2020-09-02 01:41:15,505 p=47225 u=root n=ansible | PLAY [Demonstrates use of list and navigating/accessing list elements] *********************************************
+2020-09-02 01:41:15,524 p=47225 u=root n=ansible | TASK [Gathering Facts] *********************************************************************************************
+2020-09-02 01:41:17,561 p=47225 u=root n=ansible | ok: [ubuntu2]
+2020-09-02 01:41:17,590 p=47225 u=root n=ansible | ok: [ubuntu1]
+2020-09-02 01:41:17,609 p=47225 u=root n=ansible | TASK [Install software utilities] **********************************************************************************
+2020-09-02 01:41:17,733 p=47371 u=root n=ansible | [DEPRECATION WARNING]: Invoking "apt" only once while using a loop via squash_actions is deprecated. Instead of 
+using a loop to supply multiple items and specifying `name: "{{item}}"`, please use `name: '{{software_tools}}'` 
+and remove the loop. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-09-02 01:41:17,745 p=47372 u=root n=ansible | [DEPRECATION WARNING]: Invoking "apt" only once while using a loop via squash_actions is deprecated. Instead of 
+using a loop to supply multiple items and specifying `name: "{{item}}"`, please use `name: '{{software_tools}}'` 
+and remove the loop. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-09-02 01:41:41,974 p=47225 u=root n=ansible | changed: [ubuntu1] => (item=[u'vim', u'tree', u'net-tools', u'iputils-ping'])
+2020-09-02 01:41:41,978 p=47225 u=root n=ansible | changed: [ubuntu2] => (item=[u'vim', u'tree', u'net-tools', u'iputils-ping'])
+2020-09-02 01:41:41,981 p=47225 u=root n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2020-09-02 01:41:41,988 p=47225 u=root n=ansible | PLAY RECAP *********************************************************************************************************
+2020-09-02 01:41:41,989 p=47225 u=root n=ansible | ubuntu1                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:41:41,989 p=47225 u=root n=ansible | ubuntu2                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:43:49,295 p=48844 u=root n=ansible | PLAY [Demonstrates use of list and navigating/accessing list elements] *********
+2020-09-02 01:43:49,305 p=48844 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 01:43:50,647 p=48844 u=root n=ansible | ok: [ubuntu2]
+2020-09-02 01:43:50,652 p=48844 u=root n=ansible | ok: [ubuntu1]
+2020-09-02 01:43:50,663 p=48844 u=root n=ansible | TASK [Install software utilities] **********************************************
+2020-09-02 01:43:50,728 p=48998 u=root n=ansible | [DEPRECATION WARNING]: Invoking "apt" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{item}}"`, please use `name: '{{software_tools}}'` and 
+remove the loop. This feature will be removed in version 2.11. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-09-02 01:43:50,747 p=48999 u=root n=ansible | [DEPRECATION WARNING]: Invoking "apt" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{item}}"`, please use `name: '{{software_tools}}'` and 
+remove the loop. This feature will be removed in version 2.11. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-09-02 01:43:57,055 p=48844 u=root n=ansible | ok: [ubuntu1] => (item=[u'vim', u'tree', u'net-tools', u'iputils-ping'])
+2020-09-02 01:43:57,132 p=48844 u=root n=ansible | ok: [ubuntu2] => (item=[u'vim', u'tree', u'net-tools', u'iputils-ping'])
+2020-09-02 01:43:57,137 p=48844 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 01:43:57,137 p=48844 u=root n=ansible | ubuntu1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:43:57,137 p=48844 u=root n=ansible | ubuntu2                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:44:27,372 p=49466 u=root n=ansible | PLAY [Demonstrates use of list and navigating/accessing list elements] *********
+2020-09-02 01:44:27,382 p=49466 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 01:44:28,526 p=49466 u=root n=ansible | ok: [ubuntu1]
+2020-09-02 01:44:29,547 p=49466 u=root n=ansible | ok: [ubuntu2]
+2020-09-02 01:44:29,558 p=49466 u=root n=ansible | TASK [Install software utilities] **********************************************
+2020-09-02 01:44:35,313 p=49466 u=root n=ansible | ok: [ubuntu2]
+2020-09-02 01:44:35,336 p=49466 u=root n=ansible | ok: [ubuntu1]
+2020-09-02 01:44:35,340 p=49466 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 01:44:35,341 p=49466 u=root n=ansible | ubuntu1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:44:35,341 p=49466 u=root n=ansible | ubuntu2                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:49:23,593 p=50194 u=root n=ansible | PLAY [Demonstrates practical use of dictionary in playbook] ********************
+2020-09-02 01:49:23,602 p=50194 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 01:49:25,932 p=50194 u=root n=ansible | ok: [localhost]
+2020-09-02 01:49:26,004 p=50194 u=root n=ansible | TASK [debug] *******************************************************************
+2020-09-02 01:49:26,098 p=50194 u=root n=ansible | failed: [localhost] (item={u'key': u'M2_HOME', u'value': u'/usr/share/maven'}) => {"msg": "Invalid options for debug: message"}
+2020-09-02 01:49:26,107 p=50194 u=root n=ansible | failed: [localhost] (item={u'key': u'JAVA_HOME', u'value': u'/usr/lib/java/jdk8'}) => {"msg": "Invalid options for debug: message"}
+2020-09-02 01:49:26,108 p=50194 u=root n=ansible | fatal: [localhost]: FAILED! => {"msg": "All items completed"}
+2020-09-02 01:49:26,110 p=50194 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 01:49:26,111 p=50194 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:49:46,626 p=50440 u=root n=ansible | PLAY [Demonstrates practical use of dictionary in playbook] ********************
+2020-09-02 01:49:46,638 p=50440 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 01:49:49,670 p=50440 u=root n=ansible | ok: [localhost]
+2020-09-02 01:49:49,752 p=50440 u=root n=ansible | TASK [debug] *******************************************************************
+2020-09-02 01:49:49,868 p=50440 u=root n=ansible | ok: [localhost] => (item={u'key': u'M2_HOME', u'value': u'/usr/share/maven'}) => {
+    "msg": "M2_HOME --> /usr/share/maven"
+}
+2020-09-02 01:49:49,878 p=50440 u=root n=ansible | ok: [localhost] => (item={u'key': u'JAVA_HOME', u'value': u'/usr/lib/java/jdk8'}) => {
+    "msg": "JAVA_HOME --> /usr/lib/java/jdk8"
+}
+2020-09-02 01:49:49,884 p=50440 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 01:49:49,885 p=50440 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 04:48:57,956 p=73387 u=root n=ansible | PLAY [Demonstrates how to provision docker container via Playbook] *************
+2020-09-02 04:48:57,968 p=73387 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 04:48:59,385 p=73387 u=root n=ansible | ok: [localhost]
+2020-09-02 04:48:59,414 p=73387 u=root n=ansible | TASK [Install Extra Packages for Enterprise Linux (EPEL)] **********************
+2020-09-02 04:49:16,389 p=73387 u=root n=ansible | ok: [localhost]
+2020-09-02 04:49:16,411 p=73387 u=root n=ansible | TASK [Install Python Package Installer (pip)] **********************************
+2020-09-02 04:49:42,405 p=73387 u=root n=ansible | ok: [localhost]
+2020-09-02 04:49:42,431 p=73387 u=root n=ansible | TASK [Install Docker SDK] ******************************************************
+2020-09-02 04:49:43,204 p=73387 u=root n=ansible | changed: [localhost]
+2020-09-02 04:49:43,223 p=73387 u=root n=ansible | TASK [Remove all existing containers] ******************************************
+2020-09-02 04:49:43,617 p=73387 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": true, "cmd": "docker rm -f $(docker ps -aq)", "delta": "0:00:00.123094", "end": "2020-09-02 04:49:43.583853", "msg": "non-zero return code", "rc": 1, "start": "2020-09-02 04:49:43.460759", "stderr": "\"docker rm\" requires at least 1 argument.\nSee 'docker rm --help'.\n\nUsage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]\n\nRemove one or more containers", "stderr_lines": ["\"docker rm\" requires at least 1 argument.", "See 'docker rm --help'.", "", "Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]", "", "Remove one or more containers"], "stdout": "", "stdout_lines": []}
+2020-09-02 04:49:43,619 p=73387 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 04:49:43,619 p=73387 u=root n=ansible | localhost                  : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-02 04:50:17,573 p=73739 u=root n=ansible | PLAY [Demonstrates how to provision docker container via Playbook] *************
+2020-09-02 04:50:17,584 p=73739 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 04:50:18,813 p=73739 u=root n=ansible | ok: [localhost]
+2020-09-02 04:50:18,837 p=73739 u=root n=ansible | TASK [Install Extra Packages for Enterprise Linux (EPEL)] **********************
+2020-09-02 04:50:32,277 p=73739 u=root n=ansible | ok: [localhost]
+2020-09-02 04:50:32,297 p=73739 u=root n=ansible | TASK [Install Python Package Installer (pip)] **********************************
+2020-09-02 04:50:45,479 p=73739 u=root n=ansible | ok: [localhost]
+2020-09-02 04:50:45,500 p=73739 u=root n=ansible | TASK [Install Docker SDK] ******************************************************
+2020-09-02 04:50:46,305 p=73739 u=root n=ansible | changed: [localhost]
+2020-09-02 04:50:46,324 p=73739 u=root n=ansible | TASK [Remove all existing containers] ******************************************
+2020-09-02 04:50:46,710 p=73739 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": true, "cmd": "docker rm -f $(docker ps -aq)", "delta": "0:00:00.121949", "end": "2020-09-02 04:50:46.675024", "msg": "non-zero return code", "rc": 1, "start": "2020-09-02 04:50:46.553075", "stderr": "\"docker rm\" requires at least 1 argument.\nSee 'docker rm --help'.\n\nUsage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]\n\nRemove one or more containers", "stderr_lines": ["\"docker rm\" requires at least 1 argument.", "See 'docker rm --help'.", "", "Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]", "", "Remove one or more containers"], "stdout": "", "stdout_lines": []}
+2020-09-02 04:50:46,711 p=73739 u=root n=ansible | ...ignoring
+2020-09-02 04:50:46,739 p=73739 u=root n=ansible | TASK [Create ubuntu containers] ************************************************
+2020-09-02 04:50:48,112 p=73739 u=root n=ansible | changed: [localhost] => (item=001)
+2020-09-02 04:50:48,970 p=73739 u=root n=ansible | changed: [localhost] => (item=002)
+2020-09-02 04:50:48,995 p=73739 u=root n=ansible | TASK [Create centos containers] ************************************************
+2020-09-02 04:50:49,879 p=73739 u=root n=ansible | changed: [localhost] => (item=001)
+2020-09-02 04:50:50,747 p=73739 u=root n=ansible | changed: [localhost] => (item=002)
+2020-09-02 04:50:50,784 p=73739 u=root n=ansible | TASK [List all provisioned containers] *****************************************
+2020-09-02 04:50:51,115 p=73739 u=root n=ansible | changed: [localhost]
+2020-09-02 04:50:51,143 p=73739 u=root n=ansible | TASK [debug] *******************************************************************
+2020-09-02 04:50:51,243 p=73739 u=root n=ansible | ok: [localhost] => {
+    "output": {
+        "changed": true, 
+        "cmd": "docker ps", 
+        "delta": "0:00:00.069412", 
+        "end": "2020-09-02 04:50:51.082776", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2020-09-02 04:50:51.013364", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "CONTAINER ID        IMAGE                     COMMAND               CREATED             STATUS                  PORTS                                        NAMES\n5ea9e23c3e70        tektutor/ansible-centos   \"/usr/sbin/sshd -D\"   1 second ago        Up Less than a second   0.0.0.0:3002->22/tcp, 0.0.0.0:9002->80/tcp   centos-002\na85a8f8d7b89        tektutor/ansible-centos   \"/usr/sbin/sshd -D\"   2 seconds ago       Up 1 second             0.0.0.0:3001->22/tcp, 0.0.0.0:9001->80/tcp   centos-001\n8418a7fd9d9f        tektutor/ansible-ubuntu   \"/usr/sbin/sshd -D\"   3 seconds ago       Up 2 seconds            0.0.0.0:2002->22/tcp, 0.0.0.0:8002->80/tcp   ubuntu-002\n72ab97f5e4fc        tektutor/ansible-ubuntu   \"/usr/sbin/sshd -D\"   4 seconds ago       Up 3 seconds            0.0.0.0:2001->22/tcp, 0.0.0.0:8001->80/tcp   ubuntu-001", 
+        "stdout_lines": [
+            "CONTAINER ID        IMAGE                     COMMAND               CREATED             STATUS                  PORTS                                        NAMES", 
+            "5ea9e23c3e70        tektutor/ansible-centos   \"/usr/sbin/sshd -D\"   1 second ago        Up Less than a second   0.0.0.0:3002->22/tcp, 0.0.0.0:9002->80/tcp   centos-002", 
+            "a85a8f8d7b89        tektutor/ansible-centos   \"/usr/sbin/sshd -D\"   2 seconds ago       Up 1 second             0.0.0.0:3001->22/tcp, 0.0.0.0:9001->80/tcp   centos-001", 
+            "8418a7fd9d9f        tektutor/ansible-ubuntu   \"/usr/sbin/sshd -D\"   3 seconds ago       Up 2 seconds            0.0.0.0:2002->22/tcp, 0.0.0.0:8002->80/tcp   ubuntu-002", 
+            "72ab97f5e4fc        tektutor/ansible-ubuntu   \"/usr/sbin/sshd -D\"   4 seconds ago       Up 3 seconds            0.0.0.0:2001->22/tcp, 0.0.0.0:8001->80/tcp   ubuntu-001"
+        ]
+    }
+}
+2020-09-02 04:50:51,247 p=73739 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 04:50:51,248 p=73739 u=root n=ansible | localhost                  : ok=9    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
