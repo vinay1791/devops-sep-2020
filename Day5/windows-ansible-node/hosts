@@ -1,0 +1,9 @@
+[windows]
+windows2019 ansible_host=192.168.18.196 ansible_password=rps@12345
+#windows_client ansible_host=18.207.4.160 ansible_password=Z-Y5L(%Zm73C*hW37QXjJ-hb2ScKZ=cX
+
+[windows:vars]
+ansible_user=Admin
+ansible_connection=winrm
+ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore
